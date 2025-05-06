@@ -8,12 +8,12 @@
         Title="Auth" Height="200" Width="400">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <StackPanel Orientation="Horizontal">
-            <TextBox MinWidth="250"/>
+            <TextBox Name="tb_log" MinWidth="250"/>
             <Label Content="Login"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
-            <TextBox MinWidth="250"/>
+            <TextBox Name="tb_pass" MinWidth="250"/>
             <Label Content="Password"/>
         </StackPanel>
 
