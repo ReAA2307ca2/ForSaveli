@@ -25,9 +25,9 @@ namespace WpfApp1
             if(newWin.ShowDialog() == false)
             {
                 this.Close();
+                return;
             }
             InitializeComponent();
-
             lv_users.ItemsSource = context.Users.Local.ToObservableCollection();
         }
     }

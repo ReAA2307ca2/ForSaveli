@@ -8,7 +8,7 @@ namespace WpfApp1.Model
 {
     public class ContactInfo
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public string? Telegram { get; set; }

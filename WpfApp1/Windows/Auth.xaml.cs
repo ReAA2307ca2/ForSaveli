@@ -30,7 +30,7 @@ namespace WpfApp1.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(tb_log.Text) && string.IsNullOrWhiteSpace(tb_pass.Text))
+            if(!string.IsNullOrWhiteSpace(tb_log.Text) && !string.IsNullOrWhiteSpace(tb_pass.Text))
             {
                 User loginUser = _context.Users.FirstOrDefault(q => q.EmployeeId == tb_log.Text 
                 && q.Password == tb_pass.Text);
