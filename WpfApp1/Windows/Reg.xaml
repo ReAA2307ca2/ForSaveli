@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1.Windows"
         mc:Ignorable="d"
-        Title="Reg" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Reg" Height="650" Width="400">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Margin="0 10 0 0" Orientation="Horizontal">
+            <TextBox Name="tb_log" MinWidth="250"/>
+            <Label Content="Login"/>
+        </StackPanel>
+
+        <StackPanel Margin="0 10 0 0" Orientation="Horizontal">
+            <TextBox Name="tb_pass" MinWidth="250"/>
+            <Label Content="Password"/>
+        </StackPanel>
+
+        <StackPanel Margin="0 10 0 0" Orientation="Horizontal">
+            <TextBox Name="tb_mail" MinWidth="250"/>
+            <Label Content="Email"/>
+        </StackPanel>
+
+        <StackPanel Margin="0 10 0 0" Orientation="Horizontal">
+            <TextBox Name="tb_phone" MinWidth="250"/>
+            <Label Content="Phone"/>
+        </StackPanel>
+
+        <StackPanel Margin="0 10 0 0" Orientation="Horizontal">
+            <TextBox Name="tb_tele" MinWidth="250"/>
+            <Label Content="Telegram"/>
+        </StackPanel>
+
+        <StackPanel Margin="0 10 0 0" Orientation="Horizontal">
+            <ComboBox Name="cb_status" MinWidth="250"/>
+            <Label Content="Status"/>
+        </StackPanel>
+
+        <StackPanel Margin="0 10 0 0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Register" Margin="5 0 5 0" Click="Button_Click_reg"/>
+            <Button Content="Cancel" Margin="5 0 5 0" Click="Button_Click_cancel"/>
+        </StackPanel>
+    </StackPanel>
 </Window>

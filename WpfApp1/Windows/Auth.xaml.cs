@@ -34,7 +34,11 @@ namespace WpfApp1.Windows
             {
                 User loginUser = _context.Users.FirstOrDefault(q => q.EmployeeId == tb_log.Text 
                 && q.Password == tb_pass.Text);
-                if(loginUser)
+                if(loginUser != null)
+                {
+                    DialogResult = true;
+                    return;
+                }
             }
         }
 
