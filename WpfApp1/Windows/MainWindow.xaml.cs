@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfApp1.Data;
+using WpfApp1.Windows;
 
 namespace WpfApp1
 {
@@ -20,7 +21,14 @@ namespace WpfApp1
         public ApplicationContext context = new();
         public MainWindow()
         {
+            Auth newWin = new(context);
+            if(newWin.ShowDialog() == false)
+            {
+                this.Close();
+            }
             InitializeComponent();
+
+            lv_users.ItemsSource = context.Users.Local.ToObservableCollection();
         }
     }
 }

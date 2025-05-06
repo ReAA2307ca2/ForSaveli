@@ -6,7 +6,22 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel>
+        <ListView Name="lv_users">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header=""
+                                    DisplayMemberBinding="{Binding EmployeeId}"/>
+                    <GridViewColumn Header=""
+                                    DisplayMemberBinding="{Binding ContactInfo.Email}"/>
+                    <GridViewColumn Header=""
+                                    DisplayMemberBinding="{Binding ContactInfo.Phone}"/>
+                    <GridViewColumn Header=""
+                                    DisplayMemberBinding="{Binding ContactInfo.Telegram}"/>
+                    <GridViewColumn Header=""
+                                    DisplayMemberBinding="{Binding WorkStatus}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
 </Window>

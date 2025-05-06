@@ -44,7 +44,7 @@ namespace WpfApp1.Windows
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Reg reg = new();
+            Reg reg = new(_context);
             reg.ShowDialog();
             //aboba
         }
